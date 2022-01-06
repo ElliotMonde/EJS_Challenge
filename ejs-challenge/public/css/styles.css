@@ -25,12 +25,12 @@ input::placeholder{
 #homePost{
     display: block;
     
-    max-height:55vw;
+   /* max-height:55vw;
     width:80vw;
     white-space: nowrap;
     overflow:hidden;
     text-overflow: ellipsis;
-    
+    */
 }
 #homePost+a{
     display: inline-block;
@@ -73,14 +73,15 @@ ul.navbar-right{
 .footer-padding {
     display:block;
 	padding-bottom: 60px;
+    width: 100vw;
 }
 
 .footer {
     display: block;
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
-	width: 100%;
+	width: 100vw;
 	height: 60px;
 	background-color: #1abc9c;
 }
@@ -97,4 +98,16 @@ ul.navbar-right{
 .footer a:visited{
     color: #fff;
 
+}
+#postContainer{
+    display: flex;
+    flex-direction: column;   
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    max-width: 85%;
+    height: 50vw;
+}
+#postContainer a{
+    display: block;
+    max-width: max-content;
 }

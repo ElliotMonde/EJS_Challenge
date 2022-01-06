@@ -6,9 +6,9 @@
         <div>
            <%for (var n=0;n<posts.length;n++){%>   
             <br>
-            <h2 id="homeTitle" name="homeTitle" maxlength="50"><a href="post/<%=posts[n].postTitle%>"><%=posts[n].postTitle%></a></h2>
-            <p id="homePost" name="homePost" maxlength="500"><%=posts[n].postBody%></p>
-            <a href="post/<%=posts[n].postTitle%>">Read More...</a>
+            <h2 id="homeTitle" name="homeTitle"><a name="pageLink" href="post/<%=posts[n].postLow%>"><%=posts[n].postTitle.substring(0,50)%></a></h2>
+            <p id="homePost" name="homePost"><%=posts[n].postBody.substring(0,99)+"..."%>%></p>
+            <a name="pageLink" href="post/<%=posts[n].postLow%>">Read More...</a>
             <%}%>
             </div>
 
